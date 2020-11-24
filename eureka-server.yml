@@ -1,9 +1,6 @@
-# Server port
-server:
-   port: 8761  
 eureka:
-   client:
-      # Dont register itself with eureka
-       registerWithEureka: false
-       fetchRegistry: false
-       defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
