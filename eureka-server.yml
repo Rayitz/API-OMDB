@@ -1,9 +1,8 @@
+# Server port
 server:
-  port: 8761
-  
+   port: 8761  
 eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
+   client:
+      # Dont register itself with eureka
+       registerWithEureka: false
+       fetchRegistry: false
