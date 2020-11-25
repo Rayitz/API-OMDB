@@ -20,11 +20,11 @@ zuul:
     socket-timeout-millis: 5000000
   ignoredServices: '*'
   routes:
-    resource-service:
-      path: /resource/**
-      serviceId: resource-service
+    micro-service:
+      path: /call/**
+      serviceId: micro-service
       stripPrefix: true
-    user-service:
-      path: /user/**
-      serviceId: user-service
+    micro-to-micro-service:
+      path: /doublecall/**
+      serviceId: micro-to-micro-service
       stripPrefix: true
