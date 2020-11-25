@@ -1,3 +1,7 @@
+cloud:
+  config:
+    property: call OK
+
 server:
   port: 8183
 
