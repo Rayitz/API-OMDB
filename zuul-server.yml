@@ -35,4 +35,4 @@ ribbon:
 
 micro-service:
   ribbon:
-    listOfServers: example.com,google.com
+    listOfServers: http://localhost:8183,http://localhost:8184
