@@ -28,3 +28,11 @@ zuul:
       path: /doublecall/**
       serviceId: micro-to-micro-service
       stripPrefix: true
+      
+ribbon:
+  eureka:
+    enabled: false
+
+micro-service:
+  ribbon:
+    listOfServers: example.com,google.com
