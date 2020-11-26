@@ -1,0 +1,19 @@
+cloud:
+  config:
+    property: call OK 2
+
+server:
+  port: 8184
+
+spring:
+  application:
+    name: micro-service-balance
+    
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
